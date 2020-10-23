@@ -1,25 +1,86 @@
-<html>
-    <head>
-        <title>Stoom</title>
-        <style>
-            .text {
-             text-align:  center;
-             font-size: 300%;
-            }
-            .text1 {
-                text-align: center;
-                font-size: 200%;
-            }
-           </style>
+<html lang="en">
 
-    </head>
-    <body>
-        <div class="text">
-            <h1>Stoom</h1> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div>
+    <div class="pl-4 pt-2 pb-2 pr-4 bg-yellow-500">
+      <nav class="grid grid-cols-2 gap-4">
+        <div class="flex flex-row gap-4">
+          <div>
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+              </path>
+            </svg>
+          </div>
+          <div class="flex items-center gap-4 text-red-700 text-lg">
+            <a href="#">
+              <span>Store</span>
+            </a>
+            <a href="library.html">
+              <span>Library</span>
+            </a>
+            <a href="profile.html">
+              <span>Profile</span>
+            </a>
+            <a href="tech_support.html">
+              <span>Tech support</span>
+            </a>
+          </div>
         </div>
-        <div class="text1">
-            <b>home</b> | <a href="registration.html">registration</a> | <a href="profile.html">profile</a> | <a href="">games</a> | <a href="tech_support.html">technical support</a> 
+        <div class="flex flex-row-reverse items-center gap-4 text-blue-500 text-lg text-centered">
+          <a href="profile.html">
+            <span> Log in </span>
+          </a>
+          <a href="registration.html">
+            <span> Sing up </span>
+          </a>
         </div>
-       
-    </body>
+      </nav>
+    </div>
+
+    <main>
+
+
+      <header>
+        <h2>Games</h2>
+        <h3>For GAMERS</h3>
+      </header>
+
+      <div>
+        <h4>Latest games</h4>
+
+        <div>
+          <!-- cards go here -->
+          <div>
+            <div>
+              <span>Mario 64</span>
+              <span>Game by Nintendo</span>
+            </div>
+          </div>
+        </div>
+
+        <h4>Most Popular</h4>
+
+        <div>
+          <!-- cards go here -->
+        </div>
+      </div>
+
+      <div>
+        <div>Load more</div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
 </html>
