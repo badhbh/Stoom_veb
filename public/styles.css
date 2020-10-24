@@ -21638,6 +21638,11 @@ video {
           animation: bounce 1s infinite;
 }
 
+.card {
+  border-width: 8px;
+  border-radius: 0.375rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
