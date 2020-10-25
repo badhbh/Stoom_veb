@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.card {
-    @apply border-8 rounded-md;
+.buttonBuy {
+    @apply bg-red-500 text-white font-bold py-1 px-2 rounded-full w-16 justify-self-end;
 }
