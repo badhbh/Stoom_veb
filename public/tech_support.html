@@ -1,24 +1,71 @@
-<html>
-    <head>
-        <title>Techical support</title>
-        <style>
-            .text {
-             text-align:  center;
-             font-size: 300%;
-            }
-            .text1 {
-             text-align:  center;
-             font-size: 200%;
-            }
-           </style>
-    </head>
-    <body>
-        <div class="text">
-            <h1>Technical support</h1></div>
-        <div class="text1">
-            <a href="index.html">home</a> | <a href="registration.html">registration</a> | <a href="profile.html">profile</a> | <a href="games.html">games</a> | <b>technical support</b> 
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="py-4 px-20 bg-yellow-500">
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+                <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </div>
+            <nav class="hidden md:block" id="menu">
+                <div class="flex justify-between items-center sm:text-sm md:text-lg">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <a href="index.html">
+                            <span>Store</span>
+                        </a>
+                        <a href="library.html">
+                            <span>Library</span>
+                        </a>
+                        <a href="profile.html">
+                            <span>Profile</span>
+                        </a>
+                        <a href="tech_support.html">
+                            <span>Tech support</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="profile.html">
+                            <span> Log in </span>
+                        </a>
+                        <a href="registration.html">
+                            <span> Sing up </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
-       
-    </body>
+
+        <main>
+            <div class="py-10 px-20">
+                <label class="block max-w-md mx-auto">
+                    <span>Describe your issue and we'll help you!</span>
+                    <textarea class="form-textarea my-3 block w-full bg-gray-100" rows="3"
+                        placeholder="Enter some long form content."></textarea>
+                    <button class="bg-blue-500 text-white font-bold py-2 px-2 rounded-full w-24 hover:bg-blue-700">Send</button>
+                </label>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
