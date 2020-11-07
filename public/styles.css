@@ -21638,6 +21638,23 @@ video {
           animation: bounce 1s infinite;
 }
 
+.buttonBuy {
+  --bg-opacity: 1;
+  background-color: #f56565;
+  background-color: rgba(245, 101, 101, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-weight: 700;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 9999px;
+  width: 4rem;
+  justify-self: end;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

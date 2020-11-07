@@ -1,5 +1,7 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+.buttonBuy {
+    @apply bg-red-500 text-white font-bold py-1 px-2 rounded-full w-16 justify-self-end;
+}

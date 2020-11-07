@@ -1,25 +1,217 @@
-<html>
-    <head>
-        <title>Stoom</title>
-        <style>
-            .text {
-             text-align:  center;
-             font-size: 300%;
-            }
-            .text1 {
-                text-align: center;
-                font-size: 200%;
-            }
-           </style>
+<html lang="en">
 
-    </head>
-    <body>
-        <div class="text">
-            <h1>Stoom</h1> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div>
+    <!--Navigation-->
+    <div class="py-4 px-20 bg-yellow-500">
+      <!--Small screen drop-button-->
+      <div class="relative flex items-center md:hidden" id="burger">
+        <svg class="cursor-pointer items-center w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <span class="absolute w-full text-center text-2xl">Store</span>
+      </div>
+      <!--Small screen drop-menu-->
+      <div class="hidden md:hidden flex flex-col divide-y-2 divide-gray-800 text-center text-2xl mt-5" id="menu">
+        <a href="library.html">
+          <p>Library</p>
+        </a>
+        <a href="profile.html">
+          <p>Profile</p>
+        </a>
+        <a href="tech_support.html">
+          <p>Help</p>
+        </a>
+        <div class="divide-x-2 divide-gray-800">
+          <a href="profile.html">
+            <span class="px-10"> Log in </span>
+          </a>
+          <a href="registration.html">
+            <span class="px-10"> Sing up </span>
+          </a>
         </div>
-        <div class="text1">
-            <b>home</b> | <a href="registration.html">registration</a> | <a href="profile.html">profile</a> | <a href="">games</a> | <a href="tech_support.html">technical support</a> 
+      </div>
+      <!--Navigation menu-->
+      <nav class="hidden md:block">
+        <div class="flex justify-between items-center text-2xl">
+          <div class="flex divide-x-2 divide-gray-800">
+            <svg class="mx-2 w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+              </path>
+            </svg>
+            <a href="index.html" class="px-2 bg-blue-400">
+              <span>Store</span>
+            </a>
+            <a href="library.html" class="px-2">
+              <span>Library</span>
+            </a>
+            <a href="profile.html" class="px-2">
+              <span>Profile</span>
+            </a>
+            <a href="tech_support.html" class="px-2">
+              <span>Support</span>
+            </a>
+          </div>
+          <div class="divide-x-2 divide-gray-800">
+            <a href="profile.html" class="px-2">
+              <span> Log in </span>
+            </a>
+            <a href="registration.html" class="px-2">
+              <span> Sing up </span>
+            </a>
+          </div>
         </div>
-       
-    </body>
+      </nav>
+    </div>
+
+    <main>
+
+      <header class="text-center font-mono text-3xl py-8">
+        <h2>Welcome, to STOOM</h2>
+      </header>
+
+      <div class="mx-20">
+        <h4 class="mx-20 text-xl">Latest games</h4>
+
+        <div>
+          <!-- cards go here -->
+          <div class="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-10 text-left py-5">
+            <div class="shadow-xl">
+              <img src="https://assets1.ignimgs.com/2019/05/31/mario-64---button-1559263987447.jpg" alt="SuperMario64"
+                class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Super Mario 64</span>
+                <span class="text-right pr-2">1999р</span>
+                <span class="text-sm">Game by Nintendo</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img src="https://nowcdkey.com/wp-content/uploads/2019/07/cover-nowcdkey2019-44.jpg" alt="RocketLeague"
+                class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Rocket league</span>
+                <span class="text-right pr-2">FREE</span>
+                <span class="text-sm">Game by Psyonix</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img
+                src="https://games-conventions.ru/Frontend/images/convent_logos/year_2018/tavern-of-heroes-turnir-po-starcraft-2-13-01-2018-logo.jpg"
+                alt="Starcraft2" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Starcraft 3</span>
+                <span class="text-right pr-2">499р</span>
+                <span class="text-sm">Game by Blizzard</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img
+                src="https://img.championat.com/c/1200x900/news/big/y/s/prodazhi-minecraft-dostigli-otmetki-v-200-mln-kopij_1589836261263264197.jpg"
+                alt="Mineraft" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Minecraft 2</span>
+                <span class="text-right pr-2">1499р</span>
+                <span class="text-sm">Game by Microsoft</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img src="https://www.mobygames.com/images/covers/l/380359-for-honor-playstation-4-front-cover.png"
+                alt="ForHonor" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">For Honor</span>
+                <span class="text-right pr-2">299р</span>
+                <span class="text-sm">Game by Ubisoft</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="mx-20 text-xl">Most Popular</h4>
+
+        <div>
+          <!-- cards go here -->
+          <div class="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-10 text-left py-5">
+            <div class="shadow-xl">
+              <img src="https://assets1.ignimgs.com/2019/05/31/mario-64---button-1559263987447.jpg" alt="SuperMario64"
+                class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Super Mario 64</span>
+                <span class="text-right pr-2">1999р</span>
+                <span class="text-sm">Game by Nintendo</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img src="https://nowcdkey.com/wp-content/uploads/2019/07/cover-nowcdkey2019-44.jpg" alt="RocketLeague"
+                class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Rocket league</span>
+                <span class="text-right pr-2">FREE</span>
+                <span class="text-sm">Game by Psyonix</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img
+                src="https://games-conventions.ru/Frontend/images/convent_logos/year_2018/tavern-of-heroes-turnir-po-starcraft-2-13-01-2018-logo.jpg"
+                alt="Starcraft2" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Starcraft 3</span>
+                <span class="text-right pr-2">499р</span>
+                <span class="text-sm">Game by Blizzard</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img
+                src="https://img.championat.com/c/1200x900/news/big/y/s/prodazhi-minecraft-dostigli-otmetki-v-200-mln-kopij_1589836261263264197.jpg"
+                alt="Mineraft" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">Minecraft 2</span>
+                <span class="text-right pr-2">1499р</span>
+                <span class="text-sm">Game by Microsoft</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+            <div class="shadow-xl">
+              <img src="https://www.mobygames.com/images/covers/l/380359-for-honor-playstation-4-front-cover.png"
+                alt="ForHonor" class="object-cover h-56 w-full">
+              <div class="grid grid-cols-2 px-2 py-2">
+                <span class="text-lg">For Honor</span>
+                <span class="text-right pr-2">299р</span>
+                <span class="text-sm">Game by Ubisoft</span>
+                <button class="buttonBuy hover:bg-red-700">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="py-10 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque alias, enim
+          repudiandae asperiores voluptas incidunt libero molestias esse illo dolores fugiat corrupti! Quam, rem
+          voluptates! Sed eius a aliquid commodi.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
