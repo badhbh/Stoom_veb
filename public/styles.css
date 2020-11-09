@@ -21655,6 +21655,16 @@ video {
   justify-self: end;
 }
 
+.textBox {
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #718096;
+  border-color: rgba(113, 128, 150, var(--border-opacity));
+  border-width: 2px;
+  padding: 0.75rem;
+  width: 100%;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
